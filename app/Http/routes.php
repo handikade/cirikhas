@@ -12,5 +12,14 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('shop.index');
 });
+
+Route::get('admin/dashboard', 'PagesController@admin');
+
+Route::resource('admin/brand', 'BrandController');
+Route::resource('admin/voucher', 'VoucherController');
+
+Route::resource('admin/bank', 'BankController');
+Route::resource('admin/ekspedisi', 'EkspedisiController');
+Route::resource('admin/paket', 'PaketController');
