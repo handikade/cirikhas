@@ -3,16 +3,16 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateBrandTable extends Migration {
+class CreateFotoTable extends Migration {
   public function up() {
-    Schema::create('brand', function (Blueprint $table) {
+    Schema::create('foto', function (Blueprint $table) {
       $table->increments('id');
-      $table->string('nama');
+      $table->string('url');
       $table->timestamps();
     });
   }
 
   public function down() {
-    Schema::drop('brand');
+    Schema::drop('foto');
   }
 }
