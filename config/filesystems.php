@@ -43,9 +43,19 @@ return [
 
     'disks' => [
 
-        'image' => [
+        'images' => [
           'driver' => 'local',
           'root' => public_path('images'),
+        ],
+
+        'photos' => [
+          'driver' => 'local',
+          'root' => public_path('images/photos'),
+        ],
+
+        'sliders' => [
+          'driver' => 'local',
+          'root' => public_path('images/sliders'),
         ],
 
         'local' => [

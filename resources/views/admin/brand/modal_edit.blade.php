@@ -1,4 +1,4 @@
-<div class="modal fade" id="edit-brand-{{ $i }}">
+<div class="modal fade" id="edit-brand-{{ $brand->id }}">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">

@@ -164,6 +164,9 @@ return [
         App\Providers\RouteServiceProvider::class,
         App\Providers\HalamanProvider::class,
         Collective\Html\HtmlServiceProvider::class,
+        rizalafani\rajaongkirlaravel\RajaOngkirServiceProvider::class,
+        Laravel\Socialite\SocialiteServiceProvider::class,
+        Gloudemans\Shoppingcart\ShoppingcartServiceProvider::class,
     ],
 
     /*
@@ -211,7 +214,8 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
-
+        'RajaOngkir' => rizalafani\rajaongkirlaravel\RajaOngkirFacade::class,
+        'Socialite' => Laravel\Socialite\Facades\Socialite::class,
+        'Cart' => Gloudemans\Shoppingcart\Facades\Cart::class,
     ],
-
 ];

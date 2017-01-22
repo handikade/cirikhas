@@ -1,0 +1,10 @@
+.discount-label {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 25px;
+  position: absolute;
+  color: #fff;
+  height: 20px;
+  background-color: #b71414;
+  z-index: 2;
+}

@@ -2,15 +2,27 @@
 
 namespace App;
 
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class Admin extends Model {
+class Admin extends Authenticatable {
   protected $table = 'admin';
   protected $fillable = [
-    'nama', 'username', 'password', 'level';
+    'nama', 'username', 'level',
   ];
 
+  protected $hidden = [
+    'password', 'remember_token',
+  ];
+
+  public function setNamaAttribute($nama) {
+    $this->attributes['nama'] = strtolower($nama);
+  }
+
+  public function getNamaAttribute($nama) {
+    return ucwords($nama);
+  }
+
   public function konfirmasi() {
-    return $this->hasMany('App\Konfirmasi', 'admin_id')
+    return $this->hasMany('App\Konfirmasi', 'admin_id');
   }
 }

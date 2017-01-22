@@ -171,6 +171,8 @@ a:focus {
 .row {
   margin-right: -10px;
   margin-left: -10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4,
 .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10,
@@ -1213,7 +1215,7 @@ lesshat-selector {
   position: relative;
   z-index: 1;
   width: 240px;
-  background: #317eeb;
+  background: #34495e;
 }
 .logo h1 {
   margin: 0px auto;
@@ -1223,7 +1225,7 @@ lesshat-selector {
 .navbar-default {
   border: none;
   margin-bottom: 0px;
-  background-color: #317eeb;
+  background-color: #34495e;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   border-radius: 0px;
 }
@@ -1314,7 +1316,7 @@ input.search-bar:-ms-input-placeholder {
 .logo i {
   font-size: 30px;
   margin-right: 5px;
-  color: #ee6e73;
+  color: #3498db;
 }
 .navbar-nav {
   margin: 0px;

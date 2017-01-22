@@ -13,7 +13,11 @@ class User extends Authenticatable {
     'password', 'remember_token',
   ];
 
+  public function cart() {
+    return $this->hasMany('App\Cart', 'user_id');
+  }
+
   public function alamat() {
-    return $this->hasOne('App\Alamat', 'user_id');
+    return $this->hasMany('App\Alamat', 'user_id');
   }
 }

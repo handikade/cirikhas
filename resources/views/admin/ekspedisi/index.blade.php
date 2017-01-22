@@ -1,6 +1,6 @@
 <!-- Bank Index -->
 
-@extends('admin_template')
+@extends('admin.template')
 
 @section('main')
 @include('_partial.flash_message')

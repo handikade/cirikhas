@@ -8,10 +8,10 @@ class CreateUsersTable extends Migration {
     Schema::create('users', function (Blueprint $table) {
       $table->increments('id');
       $table->string('nama');
-      $table->string('username')->unique();
-      $table->string('email');
+      $table->string('email')->unique()->nullable();
       $table->string('password');
-      $table->unsignedInteger('point');
+      $table->string('no_hp');
+      $table->unsignedInteger('poin');
       $table->rememberToken();
       $table->timestamps();
     });

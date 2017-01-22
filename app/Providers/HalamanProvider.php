@@ -11,20 +11,28 @@ class HalamanProvider extends ServiceProvider {
       $segment2 = Request::segment(2);
       $segment1 = Request::segment(1);
 
+      if ($segment2 == 'dashboard') {
+        $halaman = 'dashboard';
+      }
+
       if ($segment2 == 'bank' || $segment2 == 'ekspedisi' || $segment2 == 'paket') {
         $halaman = 'pengiriman';
       }
 
-      if ($segment2 == 'produk' || $segment2 == 'kategori' || $segment2 == 'brand' || $segment2 == 'voucher') {
+      if ($segment2 == 'produk' || $segment2 == 'kategori' || $segment2 == 'brand') {
         $halaman = 'penjualan';
+      }
+
+      if ($segment2 == 'slider' || $segment2 == 'voucher') {
+        $halaman = 'promosi';
       }
 
       if ($segment2 == 'admin' || $segment2 == 'pembeli') {
         $halaman = 'pengguna';
       }
 
-      if ($segment1 == 'pemesanan') {
-        $halaman = 'pemesanan';
+      if ($segment2 == 'order') {
+        $halaman = 'order';
       }
 
       if ($segment1 == 'pengembalian') {
